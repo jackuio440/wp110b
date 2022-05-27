@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <style>
+      body{
+        background-color: blue;
+      
+        font-size: 16px;
+      }
+      .text{
+        background-color: rgb(255, 255, 255);
+        height: auto;
+        width: 250px;
+       
+        border-style: dashed;
+        border-color: rgb(97, 97, 97);
+        border-radius: 5px;
+        margin: 15px; 
+        position: static;
+        text-align: left;
+      }
+      .text1{
+        background-color: green;
+        height: auto;
+        width: 500px;
+        padding: 20px 30px;
+        position: absolute;
+        left: 350px;
+        top: 300px;
+        text-align: center;
+        border-style: solid;
+        border-color: rgb(97, 97, 97);
+        border-radius: 10px;
+      }
+      .text2{
+        background-color: red;
+        height: auto;
+        width: 500px;
+        padding: 20px 30px;
+        position:fixed;;
+        right: 350px;
+        top: 300px;
+        text-align: center;
+        border-style: solid;
+        border-color: rgb(97, 97, 97);
+        border-radius: 10px;
+
+      }
+      
+     
+    </style>
+  </head>
+  <body>
+
+    <div class="text">
+      <h3>劉爵寬</h3>
+      <h4>Email: jack.liuu@yahoo.com</h4>
+      <h4>生日: 2003/07/12</h4>
+    </div>
+  <div class="text1">
+    <h4>興趣:</h4>
+    <p>打遊戲、寫程式</p>
+  </div>
+  <div class="text2">
+    <h4>曾就讀</h4>
+    <p>關渡國小</p>
+    <p>桃源國中</p>
+    <p>中正高中</p>
+    <p>金門大學</p>
+    
+  </div>  
+  
+    
+  
+  </body>
+</html>
