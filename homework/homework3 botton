@@ -1,0 +1,42 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<style>
+ .button
+ {
+    background-color: black;
+    color:white;
+    padding: 10px 20px;
+    border:0px black solid;
+    border-radius:3px;
+    margin: 4px 2px;
+  }
+  
+  .button1
+  {
+    background-color: AliceBlue;
+    color:black;
+  }
+  
+  .button2
+  {
+    background-color: HotPink;
+    color:black;
+  }
+  
+  .button3
+  {
+    background-color: Ivory;
+    color:black;
+  }
+  </style>
+</head>
+ <body>
+  
+  
+<button class="button">1</button>
+<button class="button button1">2</button>
+<button class="button button2">3</button>
+<button class="button button3">4</button>
+</body>
+</html>
