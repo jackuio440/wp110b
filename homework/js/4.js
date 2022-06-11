@@ -11,10 +11,10 @@ function f(a,b)
             
         }
     }
-    for(var m=0;m<=c;m++)
-    {
-        console.log(n[m]);
-    }
+    
+    
+        console.log(n);
+    
 }
 f(5,15)
 
