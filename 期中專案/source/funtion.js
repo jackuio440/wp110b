@@ -9,6 +9,7 @@ function setButtonColour(button, red, green, blue) {
 }
 
 var a = document.getElementById('counter');
+var b=0;
 var buttons = document.getElementsByClassName('colourButton');
 
 var heading = document.getElementById('colourValue');
@@ -17,7 +18,7 @@ var answerMessage = document.getElementById('answer');
 
 function startGame() {
   answerMessage.innerHTML = "";
-  a.innerHTML= a;
+  a.innerHTML= b;
   
   var answerButton = Math.round(Math.random() * buttons.length);
 
@@ -37,7 +38,7 @@ function startGame() {
     buttons[i].addEventListener('click', function(){
         if (this === buttons[answerButton]) {
             answerMessage.innerHTML = "正確!";
-          a++;
+          b++;
           
          
         } else {
