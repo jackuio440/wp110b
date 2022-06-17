@@ -37,6 +37,7 @@ function startGame() {
         if (this === buttons[answerButton]) {
             answerMessage.innerHTML = "正確!";
           startGame();
+          a=3;
          
         } else {
             answerMessage.innerHTML = "錯誤! 再猜一次!";
@@ -44,6 +45,7 @@ function startGame() {
           if(a<0)
           {
             startGame();
+            a=3;
           }
         }
     });
