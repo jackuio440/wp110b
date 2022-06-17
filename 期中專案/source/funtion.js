@@ -45,7 +45,7 @@ function startGame() {
             answerMessage.innerHTML = "錯誤! 再猜一次!";
           
         }
-    });
+    }
 
   }
 
