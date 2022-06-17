@@ -36,6 +36,8 @@ function startGame() {
     buttons[i].addEventListener('click', function(){
         if (this === buttons[answerButton]) {
             answerMessage.innerHTML = "正確!";
+          startGame();
+         
         } else {
             answerMessage.innerHTML = "錯誤! 再猜一次!";
           a--;
