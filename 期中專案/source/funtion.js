@@ -7,7 +7,7 @@ function setButtonColour(button, red, green, blue) {
     'background-color: rgb(' + red + ',' + green + ',' + blue + ');'
   );
 }
-var counting;
+var counting = 0;
 function  Plus()
 {
     counting++;
