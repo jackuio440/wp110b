@@ -29,20 +29,20 @@ function startGame() {
     var red = makeColourValue();
     var green = makeColourValue();
     var blue = makeColourValue();
+    var count;
 
     setButtonColour(buttons[i], red, green, blue);
     
 
     if (i === answerButton) {
-      heading.innerHTML =`(紅色: ${red}, 綠色: ${green},藍色: ${blue})`;;
+      heading.innerHTML =`(紅色: ${red}, 綠色: ${green},藍色: ${blue}),答對數: ${count}`;;
     }
 
     buttons[i].addEventListener('click', function(){
         if (this === buttons[answerButton]) {
-          var bo;  
+          
           answerMessage.innerHTML = "正確!";
-          document.getElementById('counter').innerHTML= (bo);
-          bo++;
+          count++;
            
          
         } else {
