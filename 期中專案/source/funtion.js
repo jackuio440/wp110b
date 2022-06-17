@@ -8,8 +8,7 @@ function setButtonColour(button, red, green, blue) {
   );
 }
 
-
-
+var a = document.getElementById('counter');
 var buttons = document.getElementsByClassName('colourButton');
 
 var heading = document.getElementById('colourValue');
@@ -39,6 +38,11 @@ function startGame() {
             answerMessage.innerHTML = "正確!";
         } else {
             answerMessage.innerHTML = "錯誤! 再猜一次!";
+          a--;
+          if(a<0)
+          {
+            startGame();
+          }
         }
     });
 
@@ -49,3 +53,4 @@ function startGame() {
 document.getElementById('resetButton').addEventListener('click', startGame);
 
 startGame();
+a=3;
