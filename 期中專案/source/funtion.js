@@ -40,6 +40,7 @@ function startGame() {
     buttons[i].addEventListener('click', function(){
         if (this === buttons[answerButton]) {
             answerMessage.innerHTML = "正確!";
+          counter.innerHTML= bo;
           bo++;
            
          
@@ -48,7 +49,7 @@ function startGame() {
           
         }
     });
-    counter.innerHTML= ;
+    
 
   }
 
