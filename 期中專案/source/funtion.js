@@ -17,7 +17,7 @@ var heading = document.getElementById('colourValue');
 var answerMessage = document.getElementById('answer');
 
 function startGame() {
-  var bo;
+  var bo=0;
   answerMessage.innerHTML = "";
   
   
