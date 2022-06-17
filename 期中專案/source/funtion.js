@@ -17,6 +17,7 @@ var answerMessage = document.getElementById('answer');
 
 function startGame() {
   answerMessage.innerHTML = "";
+  a.innerHTML= a;
   
   var answerButton = Math.round(Math.random() * buttons.length);
 
@@ -38,14 +39,16 @@ function startGame() {
             answerMessage.innerHTML = "正確!";
           startGame();
           a=3;
+          a.innerHTML= a;
          
         } else {
             answerMessage.innerHTML = "錯誤! 再猜一次!";
           a--;
+          a.innerHTML= a;
           if(a<0)
           {
             startGame();
-            a=3;
+            a.innerHTML= a;
           }
         }
     });
