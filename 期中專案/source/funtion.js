@@ -37,19 +37,12 @@ function startGame() {
     buttons[i].addEventListener('click', function(){
         if (this === buttons[answerButton]) {
             answerMessage.innerHTML = "正確!";
-          startGame();
-          a=3;
-          a.innerHTML= a;
+          a++;
+          
          
         } else {
             answerMessage.innerHTML = "錯誤! 再猜一次!";
-          a--;
-          a.innerHTML= a;
-          if(a<0)
-          {
-            startGame();
-            a.innerHTML= a;
-          }
+          
         }
     });
 
@@ -60,4 +53,4 @@ function startGame() {
 document.getElementById('resetButton').addEventListener('click', startGame);
 
 startGame();
-a=3;
+
