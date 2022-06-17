@@ -10,7 +10,7 @@ function setButtonColour(button, red, green, blue) {
 var counting = 0;
 function  Plus()
 {
-    counting++;
+    return counting++;
 }
 
 
