@@ -30,7 +30,7 @@ function startGame() {
     var blue = makeColourValue();
 
     setButtonColour(buttons[i], red, green, blue);
-    a.innerHTML= b;
+    
 
     if (i === answerButton) {
       heading.innerHTML =`(${red}, ${green}, ${blue})`;;
@@ -51,7 +51,7 @@ function startGame() {
   }
 
 }
-
+a.innerHTML= b;
 document.getElementById('resetButton').addEventListener('click', startGame);
 
 startGame();
