@@ -48,7 +48,7 @@ function startGame() {
           
         }
     });
-    counter.innerHTML= `(${bo})`;;
+    counter.innerHTML= ;
 
   }
 
