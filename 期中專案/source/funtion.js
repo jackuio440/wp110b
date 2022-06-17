@@ -18,7 +18,7 @@ var answerMessage = document.getElementById('answer');
 
 function startGame() {
   answerMessage.innerHTML = "";
-  
+  a.innerHTML= b;
   
   var answerButton = Math.round(Math.random() * buttons.length);
 
@@ -50,7 +50,7 @@ function startGame() {
   }
 
 }
-a.innerHTML= b;
+
 document.getElementById('resetButton').addEventListener('click', startGame);
 
 startGame();
