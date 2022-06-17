@@ -8,8 +8,8 @@ function setButtonColour(button, red, green, blue) {
   );
 }
 
-var a = document.getElementById('counter');
-var bo;
+var counter = document.getElementById('counter');
+
 var buttons = document.getElementsByClassName('colourButton');
 
 var heading = document.getElementById('colourValue');
@@ -17,8 +17,9 @@ var heading = document.getElementById('colourValue');
 var answerMessage = document.getElementById('answer');
 
 function startGame() {
+  var bo;
   answerMessage.innerHTML = "";
-  
+  counter.innerHTML= `(${bo})`;;
   
   var answerButton = Math.round(Math.random() * buttons.length);
 
@@ -51,7 +52,7 @@ function startGame() {
   }
 
 }
-a.innerHTML= `(${bo})`;
+
 document.getElementById('resetButton').addEventListener('click', startGame);
 
 startGame();
