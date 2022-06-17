@@ -18,7 +18,7 @@ var answerMessage = document.getElementById('answer');
 
 function startGame() {
   answerMessage.innerHTML = "";
-  a.innerHTML= b;
+  
   
   var answerButton = Math.round(Math.random() * buttons.length);
 
@@ -30,6 +30,7 @@ function startGame() {
     var blue = makeColourValue();
 
     setButtonColour(buttons[i], red, green, blue);
+    a.innerHTML= b;
 
     if (i === answerButton) {
       heading.innerHTML =`(${red}, ${green}, ${blue})`;;
