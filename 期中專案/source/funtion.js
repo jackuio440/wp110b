@@ -8,7 +8,7 @@ function setButtonColour(button, red, green, blue) {
   );
 }
 
-var counter = ;
+
 
 var buttons = document.getElementsByClassName('colourButton');
 
