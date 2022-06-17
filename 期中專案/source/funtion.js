@@ -39,7 +39,7 @@ function startGame() {
     
 
     if (i === answerButton) {
-      heading.innerHTML =`(紅色: ${red}, 綠色: ${green},藍色: ${blue},答對數: ${counting})`;;
+      heading.innerHTML =`(紅色: ${red}, 綠色: ${green},藍色: ${blue})`;;
     }
 
     buttons[i].addEventListener('click', function(){
