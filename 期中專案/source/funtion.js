@@ -8,7 +8,7 @@ function setButtonColour(button, red, green, blue) {
   );
 }
 
-var counter = document.getElementById('counter');
+var counter = ;
 
 var buttons = document.getElementsByClassName('colourButton');
 
@@ -41,7 +41,7 @@ function startGame() {
         if (this === buttons[answerButton]) {
           var bo;  
           answerMessage.innerHTML = "正確!";
-          counter.innerHTML= bo;
+          document.getElementById('counter').innerHTML= (bo);
           bo++;
            
          
