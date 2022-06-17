@@ -2,6 +2,7 @@ function makeColourValue() {
   return Math.round(Math.random() * 255);
 }
 
+
 function setButtonColour(button, red, green, blue) {
   button.setAttribute('style',
     'background-color: rgb(' + red + ',' + green + ',' + blue + ');'
