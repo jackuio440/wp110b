@@ -9,7 +9,7 @@ function setButtonColour(button, red, green, blue) {
 }
 
 var a = document.getElementById('counter');
-var b;
+var bo;
 var buttons = document.getElementsByClassName('colourButton');
 
 var heading = document.getElementById('colourValue');
@@ -33,13 +33,13 @@ function startGame() {
     
 
     if (i === answerButton) {
-      heading.innerHTML =`(${red}, ${green}, ${blue})`;;
+      heading.innerHTML =`("紅色:" ${red}, "綠色:" ${green},"藍色:" ${blue})`;;
     }
 
     buttons[i].addEventListener('click', function(){
         if (this === buttons[answerButton]) {
             answerMessage.innerHTML = "正確!";
-          b++;
+          bo++;
            
          
         } else {
@@ -51,7 +51,7 @@ function startGame() {
   }
 
 }
-a.innerHTML= b;
+a.innerHTML= `(${bo})`;
 document.getElementById('resetButton').addEventListener('click', startGame);
 
 startGame();
