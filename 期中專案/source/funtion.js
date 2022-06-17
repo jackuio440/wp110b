@@ -19,7 +19,7 @@ var answerMessage = document.getElementById('answer');
 function startGame() {
   var bo;
   answerMessage.innerHTML = "";
-  counter.innerHTML= `(${bo})`;;
+  
   
   var answerButton = Math.round(Math.random() * buttons.length);
 
@@ -48,6 +48,7 @@ function startGame() {
           
         }
     });
+    counter.innerHTML= `(${bo})`;;
 
   }
 
