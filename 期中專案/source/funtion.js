@@ -18,7 +18,7 @@ var answerMessage = document.getElementById('answer');
 
 function startGame() {
   answerMessage.innerHTML = "";
-  a.innerHTML= b;
+  a.innerHTML= 'b';
   
   var answerButton = Math.round(Math.random() * buttons.length);
 
