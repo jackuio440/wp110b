@@ -7,11 +7,7 @@ function setButtonColour(button, red, green, blue) {
     'background-color: rgb(' + red + ',' + green + ',' + blue + ');'
   );
 }
-var counting = 0;
-function  Plus()
-{
-    return counting++;
-}
+
 
 
 var buttons = document.getElementsByClassName('colourButton');
