@@ -7,7 +7,11 @@ function setButtonColour(button, red, green, blue) {
     'background-color: rgb(' + red + ',' + green + ',' + blue + ');'
   );
 }
-
+var counting;
+function  Plus()
+{
+    counting++;
+}
 
 
 var buttons = document.getElementsByClassName('colourButton');
@@ -29,20 +33,20 @@ function startGame() {
     var red = makeColourValue();
     var green = makeColourValue();
     var blue = makeColourValue();
-    var count;
+   
 
     setButtonColour(buttons[i], red, green, blue);
     
 
     if (i === answerButton) {
-      heading.innerHTML =`(紅色: ${red}, 綠色: ${green},藍色: ${blue},答對數: ${count})`;;
+      heading.innerHTML =`(紅色: ${red}, 綠色: ${green},藍色: ${blue},答對數: ${counting})`;;
     }
 
     buttons[i].addEventListener('click', function(){
         if (this === buttons[answerButton]) {
           
           answerMessage.innerHTML = "正確!";
-          count++;
+          Plus();
            
          
         } else {
