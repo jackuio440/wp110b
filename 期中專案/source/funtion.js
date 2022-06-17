@@ -17,7 +17,7 @@ var heading = document.getElementById('colourValue');
 var answerMessage = document.getElementById('answer');
 
 function startGame() {
-  var bo=0;
+  
   answerMessage.innerHTML = "";
   
   
@@ -39,7 +39,8 @@ function startGame() {
 
     buttons[i].addEventListener('click', function(){
         if (this === buttons[answerButton]) {
-            answerMessage.innerHTML = "正確!";
+          var bo;  
+          answerMessage.innerHTML = "正確!";
           counter.innerHTML= bo;
           bo++;
            
